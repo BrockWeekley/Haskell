@@ -1,0 +1,87 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+  "_id": "ide-haskell-cabal@2.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PN89pp5MJp7yKOCaqoMuQpBPQOj1XOzW2KDfOQNC0XMl5fA8ZW1RIcJkJ8qlIQPqgW4bP5p0tBYj8sjl8DiDAA==",
+  "_location": "/ide-haskell-cabal",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+  "_shasum": "faac69b9481687574981a2e443493be6c7f73d67",
+  "_spec": "https://www.atom.io/api/packages/ide-haskell-cabal/versions/2.5.0/tarball",
+  "_where": "C:\\Users\\Brack\\AppData\\Local\\Temp\\apm-install-dir-202092-13560-eyf27.hop8a8",
+  "activationHooks": [
+    "language-haskell:grammar-used"
+  ],
+  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
+  "bugs": {
+    "url": "https://github.com/atom-haskell/ide-haskell-cabal/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "ide-haskell-upi": {
+      "description": "Uses ide-haskell's unified pluggable interface",
+      "versions": {
+        "^0.3.0": "consumeUPI"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-haskell-utils": "^1.0.2",
+    "tslib": "^1.11.1"
+  },
+  "deprecated": false,
+  "description": "Provides Cabal backend for ide-haskell",
+  "devDependencies": {
+    "@types/atom": "^1.40.1",
+    "@types/chai": "^4.2.10",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^10",
+    "atom-haskell-tslint-rules": "^0.2.2",
+    "atom-ts-spec-runner": "^1.1.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3",
+    "typescript-tslint-plugin": "^0.5.5"
+  },
+  "engines": {
+    "atom": ">=1.31.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/ide-haskell-cabal#readme",
+  "keywords": [
+    "ide-haskell",
+    "ide",
+    "haskell",
+    "plugin",
+    "cabal"
+  ],
+  "license": "MIT",
+  "main": "./lib/ide-haskell-cabal",
+  "name": "ide-haskell-cabal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/ide-haskell-cabal.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint --project . && tslint --project spec",
+    "prettier": "prettier --write 'src/**/*.ts' 'spec/**/*.ts'",
+    "prettier-check": "prettier -l 'src/**/*.ts' 'spec/**/*.ts'",
+    "test": "npm run typecheck && npm run lint && npm run prettier-check",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p spec"
+  },
+  "version": "2.5.0"
+}

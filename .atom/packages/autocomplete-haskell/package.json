@@ -1,0 +1,83 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+  "_id": "autocomplete-haskell@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-u4xtgrWN28YYwlLarjIgbXxCtQaptSbg9w1IRMcQ0pKm72zRxtJ3u/jFx5XhjqehBY9NrSew1Y7oHesBmOsH+Q==",
+  "_location": "/autocomplete-haskell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+  "_shasum": "4ec0296eab31095cf40a64f2020778cbc81460c6",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-haskell/versions/1.0.1/tarball",
+  "_where": "C:\\Users\\Brack\\AppData\\Local\\Temp\\apm-install-dir-202092-21024-jytj48.ziz6b",
+  "activationHooks": [
+    "language-haskell:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/atom-haskell/autocomplete-haskell/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "haskell-completion-backend": {
+      "versions": {
+        "0.1.0": "consumeCompBack",
+        "^1.0.0": "consumeCompBack"
+      }
+    },
+    "ide-haskell-upi": {
+      "description": "Uses ide-haskell's unified pluggable interface",
+      "versions": {
+        "^0.3.0": "consumeUPI"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-highlight": "^0.3.0",
+    "fuzzaldrin": "^2.1.0",
+    "xregexp": "^3.2.0"
+  },
+  "deprecated": false,
+  "description": "Autocomplete-plus provider for haskell",
+  "devDependencies": {
+    "@types/fuzzaldrin": "^2.1.0",
+    "@types/xregexp": "^3.0.29",
+    "atom-haskell-utils": "^1.0.0",
+    "typescript": "^2.4.2"
+  },
+  "engines": {
+    "atom": ">=1.19.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/autocomplete-haskell#readme",
+  "keywords": [
+    "ide-haskell",
+    "ide",
+    "haskell",
+    "autocomplete",
+    "autocomplete-plus"
+  ],
+  "license": "MIT",
+  "main": "./lib/autocomplete-haskell",
+  "name": "autocomplete-haskell",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "autocompleteProvider_2_0_0"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/autocomplete-haskell.git"
+  },
+  "version": "1.0.1"
+}

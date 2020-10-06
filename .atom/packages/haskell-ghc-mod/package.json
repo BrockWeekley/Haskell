@@ -1,0 +1,105 @@
+{
+  "_from": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+  "_id": "haskell-ghc-mod@2.2.6",
+  "_inBundle": false,
+  "_integrity": "sha512-ErWEiXnmcOVlflyFKkOdgwAd9M6IczZym4t0zV+0jSobhE1Ae7vwyJZ82MlW64yNvXPxfpqDkclbvF3PIbyH1w==",
+  "_location": "/haskell-ghc-mod",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+  "_shasum": "8676a2dfa0a7ef04fc8af2637a1c013f2812b00e",
+  "_spec": "https://www.atom.io/api/packages/haskell-ghc-mod/versions/2.2.6/tarball",
+  "_where": "C:\\Users\\Brack\\AppData\\Local\\Temp\\apm-install-dir-202092-1072-cacr2j.dkyu",
+  "activationHooks": [
+    "language-haskell:grammar-used"
+  ],
+  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
+  "bugs": {
+    "url": "https://github.com/atom-haskell/haskell-ghc-mod/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "ide-haskell-upi": {
+      "description": "Uses ide-haskell's unified pluggable interface",
+      "versions": {
+        "^0.3.0": "consumeUPI"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-haskell-utils": "^1.0.2",
+    "atom-select-list": "^0.7.2",
+    "fuzzaldrin": "^2.1.0",
+    "opener": "^1.5.1",
+    "pidusage": ">=2.0.17 <2.0.19",
+    "promise-queue": "^2.2.5",
+    "temp": "^0.9.0",
+    "tslib": "^1.9.3",
+    "underscore": "^1.9.1"
+  },
+  "deprecated": false,
+  "description": "Provides backends for ide-haskell and autocomplete-haskell",
+  "devDependencies": {
+    "@types/atom": "~1.31.1",
+    "@types/chai": "^4.1.7",
+    "@types/fuzzaldrin": "^2.1.2",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^8",
+    "@types/opener": "^1.4.0",
+    "@types/pidusage": "^2.0.1",
+    "@types/temp": "^0.8.33",
+    "@types/underscore": "^1.8.13",
+    "atom-haskell-tslint-rules": "^0.2.2",
+    "atom-ts-spec-runner": "^1.1.1",
+    "chai": "^4.2.0",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "~3.3.4000"
+  },
+  "engines": {
+    "atom": ">=1.24.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/haskell-ghc-mod#readme",
+  "keywords": [
+    "ide-haskell",
+    "ide",
+    "haskell",
+    "ghc-mod",
+    "backend"
+  ],
+  "license": "MIT",
+  "main": "./lib/haskell-ghc-mod",
+  "name": "haskell-ghc-mod",
+  "providedServices": {
+    "haskell-completion-backend": {
+      "description": "Implements general haskell-completion-backend spec",
+      "versions": {
+        "1.0.0": "provideCompletionBackend"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/haskell-ghc-mod.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint --project . && tslint --project spec",
+    "prettier": "prettier --write 'src/**/*.ts?(x)' 'spec/**/*.ts?(x)'",
+    "prettier-check": "prettier -l 'src/**/*.ts?(x)' 'spec/**/*.ts?(x)'",
+    "test": "npm run typecheck && npm run lint && npm run prettier-check",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p spec"
+  },
+  "version": "2.2.6"
+}
